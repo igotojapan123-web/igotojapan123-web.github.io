@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLYREADY Studio — websites that real businesses run on</title>
+<meta name="description" content="Custom landing pages and member systems, built in Next.js and live in 5 working days. Every reference below is a real site a real business uses today.">
+<meta property="og:title" content="FLYREADY Studio">
+<meta property="og:description" content="Custom landing pages and member systems. Live in 5 working days. Open the references — they are real businesses, not mockups.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%88%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b0d10;--panel:#12161b;--line:#232a33;--ink:#e8ecf1;--dim:#9aa5b1;--accent:#4ade80;--accent2:#38bdf8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+h1,h2,h3{line-height:1.18;letter-spacing:-.02em;margin:0}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+header{padding:26px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,16,.86);backdrop-filter:blur(10px);z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:700;letter-spacing:-.01em}
+.logo span{color:var(--dim);font-weight:400}
+.btn{display:inline-block;padding:12px 20px;border-radius:9px;font-weight:600;text-decoration:none;border:1px solid transparent;font-size:15px}
+.btn-primary{background:var(--accent);color:#06240f}
+.btn-primary:hover{background:#6ee7a0}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:#3a4552}
+section{padding:82px 0;border-bottom:1px solid var(--line)}
+.hero{padding:96px 0 88px}
+.hero h1{font-size:clamp(34px,5.6vw,60px);margin:18px 0 22px;max-width:16ch}
+.hero p{font-size:clamp(17px,2vw,20px);color:var(--dim);max-width:60ch;margin:0 0 34px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.note{margin-top:26px;font-size:14px;color:var(--dim)}
+h2{font-size:clamp(25px,3.4vw,34px);margin:14px 0 10px}
+.lede{color:var(--dim);max-width:62ch;margin:0 0 38px}
+.grid{display:grid;gap:18px}
+@media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.chrome{display:flex;align-items:center;gap:8px;padding:11px 14px;border-bottom:1px solid var(--line);background:#0e1216}
+.dot{width:10px;height:10px;border-radius:50%;background:#2c3540}
+.addr{margin-left:8px;font-size:12.5px;color:var(--dim);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .body{padding:22px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--dim);font-size:14.5px;margin:0 0 18px}
+.tag{display:inline-block;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent2);border:1px solid #1e3a4a;background:#0d1a22;padding:4px 9px;border-radius:99px;margin-bottom:12px}
+.price-grid{display:grid;gap:18px}
+@media(min-width:760px){.price-grid{grid-template-columns:repeat(3,1fr)}}
+.price{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:26px;display:flex;flex-direction:column}
+.price.feature{border-color:#2b6b45;box-shadow:0 0 0 1px #2b6b45 inset}
+.price .amt{font-size:34px;font-weight:700;letter-spacing:-.02em;margin:6px 0 4px}
+.price .amt small{font-size:15px;color:var(--dim);font-weight:400}
+.price ul{list-style:none;padding:0;margin:16px 0 22px;color:var(--dim);font-size:14.5px}
+.price li{padding:6px 0 6px 20px;position:relative}
+.price li:before{content:"";position:absolute;left:0;top:14px;width:7px;height:7px;border-radius:50%;background:#2f6b48}
+.price .foot{margin-top:auto}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:14px}
+ol.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px 20px 18px 62px;position:relative;color:var(--dim);font-size:15px}
+ol.steps li:before{content:counter(s);position:absolute;left:20px;top:17px;width:26px;height:26px;border-radius:50%;background:#16241c;color:var(--accent);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+ol.steps b{color:var(--ink);font-weight:600}
+.split{display:grid;gap:18px}
+@media(min-width:760px){.split{grid-template-columns:1fr 1fr}}
+.box{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--panel)}
+.box h3{font-size:16px;margin-bottom:14px}
+.box ul{margin:0;padding-left:18px;color:var(--dim);font-size:14.5px}
+.box li{margin:8px 0}
+.box.no h3{color:#f0a68a}
+.contact{text-align:center;padding:88px 0}
+.contact h2{max-width:20ch;margin:14px auto 14px}
+.contact p{color:var(--dim);max-width:56ch;margin:0 auto 30px}
+footer{padding:38px 0 60px;color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;background:#0e1216;border:1px solid var(--line);padding:2px 6px;border-radius:5px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">FLYREADY <span>Studio</span></div>
+    <a class="btn btn-ghost" href="#contact">Start a project</a>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="eyebrow">Landing pages &amp; member systems</div>
+  <h1>Websites that real businesses actually run on.</h1>
+  <p>Every reference on this page is live right now and used daily by a paying business — not a mockup, not a concept shot, not a template with a logo dropped in. Open them on your phone before you decide anything.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="#contact">Start a project</a>
+    <a class="btn btn-ghost" href="#work">See the work</a>
+  </div>
+  <div class="note">Built in Next.js · deployed to Vercel · live in 5 working days · the source code is yours</div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">The work</div>
+    <h2>Don’t trust a screenshot. Open the real thing.</h2>
+    <p class="lede">Screenshots hide slow loading, broken phone layouts, and dead links. These are the live URLs. Two of them have been maintained for months, which is a harder test than launching something once.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="addr">keydariacademy.com</span></div>
+        <div class="body">
+          <span class="tag">Marketing site</span>
+          <h3>Keydari Academy — Incheon, Korea</h3>
+          <p>Custom intro sequence, sticky contact rail, announcement bar, director profile, results section, and the founder’s book tied into the page. On its own domain.</p>
+          <a class="btn btn-ghost" href="https://keydariacademy.com" target="_blank" rel="noopener">Open the live site →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="addr">sky-landing-theta.vercel.app</span></div>
+        <div class="body">
+          <span class="tag">Marketing site</span>
+          <h3>Sky Academy — Daegu, Korea</h3>
+          <p>Full-bleed cinematic hero over drone footage, scroll-driven sections, and a structure built around a single action: book a consultation.</p>
+          <a class="btn btn-ghost" href="https://sky-landing-theta.vercel.app" target="_blank" rel="noopener">Open the live site →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="addr">onair-lms.vercel.app</span></div>
+        <div class="body">
+          <span class="tag">Member system</span>
+          <h3>On-Air — speech academy</h3>
+          <p>Members log in to see today’s class and attendance, submit homework as text, audio, photo or video, receive feedback, and watch a progress report build up over time.</p>
+          <a class="btn btn-ghost" href="https://onair-lms.vercel.app" target="_blank" rel="noopener">Open the login →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="chrome"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="addr">onstep-lms.vercel.app</span></div>
+        <div class="body">
+          <span class="tag">Member system</span>
+          <h3>On-Step — dance admissions academy</h3>
+          <p>Video critique studio, an admissions control board, and a routine builder. Built for a school whose entire job is getting students through auditions.</p>
+          <a class="btn btn-ghost" href="https://onstep-lms.vercel.app" target="_blank" rel="noopener">Open the login →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">Pricing</div>
+    <h2>Fixed prices. No hourly surprises.</h2>
+    <p class="lede">You know the number before anything starts. If a request falls outside what we agreed in writing, I tell you the extra cost before I do it — never after.</p>
+
+    <div class="price-grid">
+      <div class="price feature">
+        <div class="eyebrow">Landing page</div>
+        <div class="amt">$690</div>
+        <div style="color:var(--dim);font-size:14px">Live in 5 working days</div>
+        <ul>
+          <li>A design made for your business</li>
+          <li>Next.js, deployed, fast on a phone</li>
+          <li>Inquiry form to your inbox</li>
+          <li>SEO basics + shareable link card</li>
+          <li>Your domain connected</li>
+          <li>One full round of revisions</li>
+          <li>Source code is yours</li>
+        </ul>
+        <div class="foot"><a class="btn btn-primary" href="#contact">Start this</a></div>
+      </div>
+
+      <div class="price">
+        <div class="eyebrow">Multi-page site</div>
+        <div class="amt">$1,190<small> +</small></div>
+        <div style="color:var(--dim);font-size:14px">About 10 working days</div>
+        <ul>
+          <li>Around 5 pages</li>
+          <li>Everything in Landing page</li>
+          <li>Content structure you can extend</li>
+          <li>50% deposit, 50% on delivery</li>
+        </ul>
+        <div class="foot"><a class="btn btn-ghost" href="#contact">Ask for a quote</a></div>
+      </div>
+
+      <div class="price">
+        <div class="eyebrow">Site + member system</div>
+        <div class="amt">$1,490<small> +</small></div>
+        <div style="color:var(--dim);font-size:14px">Scoped case by case</div>
+        <ul>
+          <li>Login, roles, permissions</li>
+          <li>Documents, uploads, feedback</li>
+          <li>Notifications and admin console</li>
+          <li>The kind of thing behind the two logins above</li>
+        </ul>
+        <div class="foot"><a class="btn btn-ghost" href="#contact">Talk it through</a></div>
+      </div>
+    </div>
+
+    <div class="note">Prices in USD. Korean clients can pay by bank transfer at the day’s rate. 14-day refund.</div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">How it goes</div>
+    <h2>Five steps, and you always know which one you’re in.</h2>
+    <p class="lede">The five working days start the day I have your text and photos — not the day you pay. That one detail removes most of what goes wrong in these projects.</p>
+    <ol class="steps">
+      <li><b>You write to me.</b> Within 24 hours you get a plan: the sections I would build, in order, and — more usefully — what I would leave out and why.</li>
+      <li><b>We agree it in writing.</b> A one-page scope sheet, including a section titled “not included this time”. Nothing is designed before you confirm it.</li>
+      <li><b>Day 3: a live preview URL.</b> The real page on your phone, not a picture of a design.</li>
+      <li><b>Day 4: one round of changes.</b> Send everything in a single message and I do it all at once.</li>
+      <li><b>Day 5: live on your domain.</b> Plus the source code and a short note on editing your own text.</li>
+    </ol>
+    <div class="note">If anything is going to slip, you hear it from me the day it happens — not on day five.</div>
+  </div>
+</section>
+
+<section id="fit">
+  <div class="wrap">
+    <div class="eyebrow">Honestly</div>
+    <h2>Who this is for, and who it isn’t.</h2>
+    <div class="split">
+      <div class="box">
+        <h3>A good fit</h3>
+        <ul>
+          <li>Schools, studios, clinics, solo practices, small service businesses</li>
+          <li>Your current site is a page builder from 2015</li>
+          <li>You’ve been sending customers to an Instagram profile because there was nothing else to send</li>
+          <li>You know the one thing you want a visitor to do</li>
+          <li>You want a member area behind the site later</li>
+        </ul>
+      </div>
+      <div class="box no">
+        <h3>Not a good fit</h3>
+        <ul>
+          <li>A store with hundreds of products — that’s a different job and someone else will do it better</li>
+          <li>You need it tomorrow. Five days is real, and part of it is waiting on you</li>
+          <li>You want unlimited revisions. One round is included; more is quoted honestly</li>
+          <li>You’d rather not agree the scope in writing first</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Start a project</div>
+    <h2>Tell me about the business. I’ll tell you honestly whether I can help.</h2>
+    <p>If I don’t think I can improve your site enough to be worth $690, I’ll say so. That’s cheaper for me than a refund and an unhappy client. Replies within 24 hours.</p>
+    <p><a class="btn btn-primary" href="mailto:flyready.team@gmail.com?subject=Website%20project%20%E2%80%94%20%5Byour%20business%20name%5D&amp;body=1.%20What%20your%20business%20does%2C%20in%20one%20sentence%3A%0A%0A2.%20Your%20current%20site%20or%20Instagram%3A%0A%0A3.%20One%20site%20whose%20feel%20you%20like%20(any%20industry)%3A%0A%0A4.%20Do%20you%20already%20own%20a%20domain%3F%0A%0A5.%20The%20ONE%20thing%20you%20want%20a%20visitor%20to%20do%20(call%20%2F%20book%20%2F%20message%20%2F%20buy)%3A%0A%0A---%0AShort%20answers%20are%20fine.%20Rough%20is%20fine.%0A">Write to me →</a></p>
+    <div class="note">The link opens your mail app with the five questions already in it. <br>Or buy the landing page directly: <a href="https://sakuraexplorer4.gumroad.com/l/landing-page-in-5-days" target="_blank" rel="noopener" style="color:var(--accent2)">$690 on Gumroad</a> — the five days start when you send your material.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>FLYREADY Studio · Ryulhwan Kim · <a href="mailto:flyready.team@gmail.com" style="color:var(--dim)">flyready.team@gmail.com</a></div>
+    <div>Also building <a href="https://github.com/igotojapan123-web/regression-guard" target="_blank" rel="noopener" style="color:var(--dim)">Regression Guard</a> (MIT)</div>
+  </div>
+</footer>
+
+</body>
+</html>
