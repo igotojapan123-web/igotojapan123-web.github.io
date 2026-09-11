@@ -88,6 +88,13 @@ ol.steps b{color:var(--ink);font-weight:600}
 .contact p{color:var(--dim);max-width:58ch;margin:0 auto 28px}
 footer{padding:34px 0 62px;color:var(--dim);font-size:13px}
 footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.chk{display:grid;gap:12px;max-width:560px;margin:8px 0 0}
+.chk label{display:grid;gap:6px;font-size:13.5px;color:var(--dim)}
+.chk input{font:inherit;font-size:15px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 13px;outline:none}
+.chk input:focus{border-color:#2f6b48;box-shadow:0 0 0 3px rgba(74,222,128,.12)}
+.chk button{justify-self:start}
+.chk-note{font-size:12.5px;color:var(--dim)}
+.chk-done{background:#0d1a12;border:1px solid #1d3b28;border-radius:12px;padding:16px 18px;color:#b9c9be;max-width:560px}
 </style>
 </head>
 <body>
@@ -257,10 +264,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
     <div class="eyebrow">Free · no follow-up</div>
     <h2>Send me your website address. I’ll run five checks and email you what I find.</h2>
     <p class="lede">Secure or “Not secure”, readable on a phone or not, whether a customer can actually send you a file from the site, dead widgets, and facts that contradict each other. Findings and screenshots only — if it passes, I’ll say so and that’s the end of it. <a href="notes/shop-websites-2026/">Here is what I found running the same checks on 283 small-manufacturer sites</a>, and <a href="notes/school-websites-2026/">on 33 martial-arts school sites</a>.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="mailto:flyready.team@gmail.com?subject=Five-point%20check%3A%20%5Byour%20website%5D&body=Website%3A%20%0A%0AWhat%20the%20business%20does%2C%20in%20one%20line%3A%20%0A">Send your website address</a>
-      <a class="btn btn-ghost" href="notes/shop-websites-2026/">Read the 283-site data</a>
-    </div>
+    <form class="chk" action="https://docs.google.com/forms/d/e/1FAIpQLSdidwGLmsx3JlznmxJZl4gaaMJhuf_jd4_fIzek84eELRJZXw/formResponse" method="POST" target="chk-sink" onsubmit="this.querySelector('button').disabled=true;setTimeout(()=>{this.hidden=true;this.nextElementSibling.hidden=false;},600)">
+  <label>Your website address<input name="entry.1439047405" type="text" inputmode="url" placeholder="yourcompany.com" required></label>
+  <label>Your email (where I send the findings)<input name="entry.677160128" type="email" placeholder="you@yourcompany.com" required></label>
+  <label>What the business does, in one line<input name="entry.171158293" type="text" placeholder="CNC machine shop in Ohio, 12 people" maxlength="160"></label>
+  <button type="submit" class="btn btn-primary">Run the five checks</button>
+  <span class="chk-note">Free. Findings only. Reply within 24 hours on working days.</span>
+</form>
+<p class="chk-done" hidden>Sent. You’ll get the findings by email within 24 hours on working days. If your site passes all five, I’ll say so and that’s the end of it.</p>
+<iframe name="chk-sink" title="" hidden></iframe>
+
+    <p class="note"><a href="notes/shop-websites-2026/">Read the 283-site data</a> · <a href="notes/school-websites-2026/">the 33-school data</a></p>
   </div>
 </section>
 
