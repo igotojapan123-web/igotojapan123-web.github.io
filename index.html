@@ -63,7 +63,7 @@ h2{font-size:clamp(24px,3.3vw,33px);margin:12px 0 10px}
 .secbox p{color:#d8cba6;font-size:14.5px;margin:0 0 12px}
 .secbox p:last-child{margin:0}
 .price-grid{display:grid;gap:16px}
-@media(min-width:820px){.price-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:820px){.price-grid{grid-template-columns:repeat(2,1fr)}}@media(min-width:1100px){.price-grid{grid-template-columns:repeat(4,1fr)}}
 .price{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:25px;display:flex;flex-direction:column}
 .price.feature{border-color:#2b6b45;box-shadow:inset 0 0 0 1px #2b6b45}
 .price .amt{font-size:32px;font-weight:700;letter-spacing:-.025em;margin:5px 0 3px}
@@ -114,7 +114,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
     <a class="btn btn-primary" href="#contact">Start a project</a>
     <a class="btn btn-ghost" href="#work">See the work</a>
   </div>
-  <div class="note">Next.js · deployed and maintained · landing page from $1,290, live in 5 working days · source code is yours</div>
+  <div class="note">Next.js · deployed and maintained · three fixes on your existing site for $290 in 48 hours · landing page from $1,290 in 5 working days · source code is yours</div>
 </div>
 
 <section id="work">
@@ -286,6 +286,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
     <p class="lede" style="margin-top:-18px">Payment terms, what is included, and the refund ladder for every stage are written out in full on one page: <a href="terms/">terms, payment and refunds →</a></p>
 
     <div class="price-grid">
+      <div class="price">
+        <div class="tag tag-sec">New · 48 hours</div>
+        <h3>Fix Three</h3>
+        <div class="amt">$290</div>
+        <p style="color:var(--dim);font-size:14px;margin:6px 0 0">On your existing site. Live within 48 hours of getting access.</p>
+        <ul>
+          <li>https working and enforced — certificate, http→https redirect, mixed-content fixed</li>
+          <li>Dead widgets and blocked resources removed (Google+, AddThis, retired fonts and CDNs)</li>
+          <li>A real quote form with file upload that lands in your inbox — no more mailto</li>
+          <li>Viewport line added if missing, so text is readable on a phone</li>
+          <li>Can't be done on your platform? I say so first — full refund</li>
+        </ul>
+        <div class="foot"><a class="btn btn-primary" href="https://sakuraexplorer4.gumroad.com/l/fix-three" target="_blank" rel="noopener">Fix mine — $290</a></div>
+      </div>
+
       <div class="price feature">
         <div class="eyebrow">Landing page</div>
         <div class="amt">$1,290</div>
